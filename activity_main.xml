@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginHorizontal="50sp"
+        android:autofillHints=""
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="@string/input_city"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_below="@id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_button"
+        android:layout_marginHorizontal="130sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/teal_200"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_btn"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="306dp" />
+</RelativeLayout>
